@@ -16,5 +16,11 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
+
+  flyway:
+    enabled: true
+
+
+  Secret_key_for_token: CuriouserAndCuriouser_EveryoneIsMadHere
