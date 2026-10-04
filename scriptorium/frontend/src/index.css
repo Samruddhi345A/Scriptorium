@@ -1,0 +1,54 @@
+/* ── Reset & base ────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:         #0f0e11;
+  --color-surface:    #1a1820;
+  --color-border:     #2e2b38;
+  --color-primary:    #c9a96e;   /* parchment gold */
+  --color-primary-dim:#8a6f42;
+  --color-text:       #e8e0d0;
+  --color-muted:      #7a7485;
+  --color-node-bg:    #211f2b;
+  --color-node-hover: #2e2b3d;
+  --color-edge-est:   #c9a96e;
+  --color-edge-prob:  #7a8fbb;
+  --color-edge-spec:  #6a7a6a;
+  --radius:           8px;
+  --font-sans:        'Segoe UI', system-ui, sans-serif;
+  --font-serif:       Georgia, 'Times New Roman', serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ── Scrollbar (webkit) ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
